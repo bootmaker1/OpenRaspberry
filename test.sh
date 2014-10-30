@@ -2,18 +2,9 @@
 
 echo Starting !
 
-function bla(){
-local BLABOL="'git status --porcelain 2>&1'"
+if git diff-index --quiet HEAD --; then
+   echo EQUAL !
+else
+   echo NOT EQUAL !
+fi
 
-
-
-#if [[ $BLABOL ]]; then
-#   echo NOT EQUAL !
-   echo "$BLABOL"
-#else
-#   echo EQUAL !
-#   echo $BLABOL
-#fi
-}
-
-export bla()
