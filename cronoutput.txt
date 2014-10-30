@@ -1,8 +1,2 @@
-diff: missing operand after `/dev/fd/63'
-diff: Try `diff --help' for more information.
-Thu Oct 30 16:00:01 CET 2014: Checking my public IP addr now!
-
-82.142.115.209
-
-
-Done!
+./update_ip.sh: line 6: DACO: command not found
+./update_ip.sh: line 28: syntax error: unexpected end of file

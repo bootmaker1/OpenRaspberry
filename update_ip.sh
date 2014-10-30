@@ -3,7 +3,8 @@
 #-s means silent - no verbose
 curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt
 
-
+if ! git diff-index --quiet HEAD --;
+then
 #-e means that i detects \n
 echo -e "$(date): Checking my public IP addr now!\n"
 
@@ -20,3 +21,7 @@ git commit -q -a -m "Updating my IP addr."
 git push -q
 
 echo -e "\nDone!"
+
+else
+echo "Nothing to commit!"
+fi
