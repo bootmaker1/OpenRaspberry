@@ -3,7 +3,13 @@
 #-s means silent - no verbose
 #curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt
 
-if [[ 'git status --porcelain' ]]; then
+CHANGES='git status | grep "working directory clean"'
+if [ $CHANGES -eq "" ]; then
+echo bla
+else
+echo ooo
+fi
+
 #-e means that i detects \n
 echo -e "$(date): Checking my public IP addr now!\n"
 
@@ -21,6 +27,6 @@ git push -q
 
 echo -e "\nDone!"
 
-else
+#else
 echo "Nothing to commit!"
-fi
+#fi

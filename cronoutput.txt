@@ -1,2 +1,2 @@
-./update_ip.sh: line 6: DACO: command not found
-./update_ip.sh: line 28: syntax error: unexpected end of file
+./update_ip.sh: line 9: syntax error near unexpected token `else'
+./update_ip.sh: line 9: `else'
