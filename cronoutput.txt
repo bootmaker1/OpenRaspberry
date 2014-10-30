@@ -1,6 +1,4 @@
-Thu Oct 30 17:15:01 CET 2014: Checking my public IP addr now!
+Thu Oct 30 17:30:02 CET 2014: Checking my public IP addr now!
 
 82.142.115.209
 
-
-Done!

@@ -1,0 +1,9 @@
+#!/bin/bash
+BLABOL = 'git status --porcelain'
+if [[ $BLABOL ]]; then
+   echo NOT EQUAL !
+   echo $BLABOL
+else
+   echo EQUAL !
+   echo $BLABOL
+fi
