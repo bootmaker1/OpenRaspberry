@@ -1,2 +1,2 @@
-./update_ip.sh: line 9: syntax error near unexpected token `else'
-./update_ip.sh: line 9: `else'
+./update_ip.sh: line 7: [: too many arguments
+Nothing to commit!

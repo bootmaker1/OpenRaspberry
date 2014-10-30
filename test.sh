@@ -1,6 +1,7 @@
 #!/bin/bash
 
-if [ $1 -eq 1 ] ; then
+#if [ 'git status --porcelain' -ne "" ] ; then
+if [ ! 'git status --porcelain' ]; then
    echo EQUAL !
 else
    echo NOT EQUAL !
