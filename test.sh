@@ -2,7 +2,7 @@
 
 echo Starting !
 
-if ! git diff-index --quiet HEAD --; then
+if -e $(git status); then
    VN="$VN-mod"
    echo NOT EQUAL !
 fi
