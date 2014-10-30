@@ -7,7 +7,7 @@ echo -e "Checking my public IP addr!\n"
 curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt 
 
 #print my new IP addr
-cat my_ip_addr.txt
+cat my_ip_addr.txt + '\n'
 
 #detect all new or deleted files
 git add -A
