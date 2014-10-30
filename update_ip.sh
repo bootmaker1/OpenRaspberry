@@ -18,4 +18,4 @@ git add -A
 git commit -q -a -m "Updating my IP addr."
 git push -q
 
-echo -e "\n\nFinished!"
+echo -e "\nDone!"
