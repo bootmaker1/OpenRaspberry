@@ -5,7 +5,7 @@ echo -e "$(date): Checking my public IP addr now!\n"
 
 #-s means silent - no verbose
 curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt 
-
+echo "ADSSADASDASDASDASDASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"
 #print my new IP addr
 cat my_ip_addr.txt
 #print one free line after the text
