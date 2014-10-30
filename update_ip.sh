@@ -1,9 +1,10 @@
 #!/bin/bash
 
 #-s means silent - no verbose
-#curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt
+curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt
 
-if [ 'git status --porcelain' ]; then
+if ! git diff-index --quiet HEAD --; then
+VN="$VN-mod"
 
 #-e means that i detects \n
 echo -e "$(date): Checking my public IP addr now!\n"

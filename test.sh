@@ -2,9 +2,8 @@
 
 echo Starting !
 
-if git diff-index --quiet HEAD --; then
-   echo EQUAL !
-else
+if ! git diff-index --quiet HEAD --; then
+   VN="$VN-mod"
    echo NOT EQUAL !
 fi
 
