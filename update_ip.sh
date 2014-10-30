@@ -4,7 +4,6 @@
 #curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt
 
 if [ 'git status --porcelain' ]; then
-echo bla
 
 #-e means that i detects \n
 echo -e "$(date): Checking my public IP addr now!\n"
