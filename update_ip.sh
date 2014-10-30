@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #-s means silent - no verbose
-curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt
+#curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt
 
 if [[ 'git status --porcelain' ]]; then
 #-e means that i detects \n
