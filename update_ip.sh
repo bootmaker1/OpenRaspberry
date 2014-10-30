@@ -1,6 +1,6 @@
 #!/bin/bash
 echo -e "Checking my IP addr!\n\n"
-curl http://bot.whatismyipaddress.com/ > my_ip_addr.txt 
+curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt 
 echo -e "\n"
 cat my_ip_addr.txt
 echo -e "\n"
