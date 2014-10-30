@@ -1,6 +1,6 @@
-Thu Oct 30 15:45:01 CET 2014: Checking my public IP addr now!
+diff: missing operand after `/dev/fd/63'
+diff: Try `diff --help' for more information.
+Thu Oct 30 16:00:01 CET 2014: Checking my public IP addr now!
 
 82.142.115.209
 
-
-Done!
