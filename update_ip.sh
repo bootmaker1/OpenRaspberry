@@ -1,6 +1,6 @@
 #!/bin/bash
 
-diff <my_ip_addr.txt <curl -s http://bot.whatismyipaddress.com/ > output.txt
+diff <my_ip_addr.txt <(curl -s http://bot.whatismyipaddress.com/) > output.txt
 
 #-e means that i detects \n
 echo -e "$(date): Checking my public IP addr now!\n"
