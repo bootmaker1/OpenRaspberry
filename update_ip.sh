@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #-e means that i detects \n
-echo -e "Checking my IP addr!\n"
+echo -e "Checking my public IP addr!\n"
 
 #-s means silent - no verbose
 curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt 
