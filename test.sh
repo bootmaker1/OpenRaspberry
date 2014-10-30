@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/Desktop/projects/OpenRaspberry/
+cd
 if [ 'git status --porcelain' ]; then
    echo NOT EQUAL !
 else
