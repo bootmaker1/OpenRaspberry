@@ -25,4 +25,6 @@ git add -A
 #-q means quiet mode - no verbose
 git commit -q -a -m "Updating my IP addr to $newip at $(date)"
 git push -q
+
 fi
+#EOF
