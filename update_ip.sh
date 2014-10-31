@@ -17,7 +17,12 @@ rm output.log
 echo "$(date): Checking my public IP addr now!" >> output.log
 
 #print my new IP addr
-cat my_ip_addr.txt >> output.log
+echo "$newip" >> output.log
+
+#remove my old IP addr
+rm my_ip_addr.txt
+#save my new IP addr
+echo "$newip" >> my_ip_addr.txt
 
 #detect all new files
 git add -A
