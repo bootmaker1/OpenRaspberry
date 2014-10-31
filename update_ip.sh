@@ -17,9 +17,9 @@ if [ "$newip" != "$oldip" ] || [ "$change" != "" ]; then
 echo -e "$(date): Checking my public IP addr now!\n" >> output.log
 
 #print my new IP addr
-cat my_ip_addr.txt
+cat my_ip_addr.txt >> output.log
 #new line after IP addr
-echo -e "\n"
+echo -e "\n" >> output.log
 
 #-q means quiet mode - no verbose
 git commit -q -a -m "Updating my IP addr to $newip at $(date)"
