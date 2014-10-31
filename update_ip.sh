@@ -23,5 +23,5 @@ cat my_ip_addr.txt >> output.log
 git commit -q -a -m "Updating my IP addr to $newip at $(date)"
 git push -q
 
-echo "Done!" >> output.log
+echo -e "\nDone!" >> output.log
 fi
