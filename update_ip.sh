@@ -11,10 +11,12 @@ change=$(git status -s)
 if [ "$newip" != "$oldip" ] || [ "$change" != "" ]; then
 
 #-e means that i detects \n
-echo "$(date): Checking my public IP addr now!\n" >> output.log
+echo "$(date): Checking my public IP addr now!" >> output.log
 
 #print my new IP addr
 cat my_ip_addr.txt >> output.log
+#new line
+echo -e "\n"
 
 #detect all new files
 git add -A
