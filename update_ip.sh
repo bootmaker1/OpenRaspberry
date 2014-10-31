@@ -3,7 +3,7 @@
 #-s means silent - no verbose
 newip=$(curl -s http://bot.whatismyipaddress.com/)
 oldip=$(<< my_ip_addr.txt)
-echo $oldip
+echo $(oldip)
 echo $newip
 
 if ! git diff-index --quiet HEAD --; then
