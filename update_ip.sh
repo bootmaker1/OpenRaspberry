@@ -10,13 +10,13 @@ change=$(git status -s)
 #if ip addr differs or if there is some change in folder
 if [ "$newip" != "$oldip" ] || [ "$change" != "" ]; then
 
-#remove old output for new entrys
+#remove old output for new entry
 rm output.log
 
-#-e means that i detects \n
+#some comment in log
 echo "$(date): Checking my public IP addr now!" >> output.log
 
-#print my new IP addr
+#print my new IP addr to log
 echo "$newip" >> output.log
 
 #remove my old IP addr
@@ -29,6 +29,7 @@ git add -A
 
 #-q means quiet mode - no verbose
 git commit -q -a -m "Updating my IP addr to $newip at $(date)"
+#update remote repo
 git push -q
 
 fi
