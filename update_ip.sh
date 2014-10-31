@@ -10,13 +10,16 @@ change=$(git status -s)
 #if ip addr differs or if there is some change in folder
 if [ "$newip" != "$oldip" ] || [ "$change" != "" ]; then
 
+#remove old output for new entrys
+rm output.log
+
 #-e means that i detects \n
 echo "$(date): Checking my public IP addr now!" >> output.log
 
 #print my new IP addr
 cat my_ip_addr.txt >> output.log
 #new line
-echo "" >> output.log
+echo -e "\n" >> output.log
 
 #detect all new files
 git add -A
