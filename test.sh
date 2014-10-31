@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo << 'git status -s'
+
 echo Starting !
 
 if -e $(git status); then
