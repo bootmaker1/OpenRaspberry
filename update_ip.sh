@@ -18,10 +18,8 @@ echo "$(date): Checking my public IP addr now!\n" >> output.log
 
 #print my new IP addr
 cat my_ip_addr.txt >> output.log
-git add -A
+
 #-q means quiet mode - no verbose
 git commit -q -a -m "Updating my IP addr to $newip at $(date)"
 git push -q
-
-#echo -e "\nDone!" >> output.log
 fi
