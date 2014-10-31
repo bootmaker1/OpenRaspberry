@@ -14,16 +14,14 @@ change=$(git status -s)
 if [ "$newip" != "$oldip" ] || [ "$change" != "" ]; then
 
 #-e means that i detects \n
-echo -e "$(date): Checking my public IP addr now!\n" >> output.log
+echo "$(date): Checking my public IP addr now!\n" >> output.log
 
 #print my new IP addr
 cat my_ip_addr.txt >> output.log
-#new line after IP addr
-echo -e "\n" >> output.log
 
 #-q means quiet mode - no verbose
 git commit -q -a -m "Updating my IP addr to $newip at $(date)"
 git push -q
 
-echo -e "Done!\n" >> output.log
+echo "Done!" >> output.log
 fi
