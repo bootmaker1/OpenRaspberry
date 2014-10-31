@@ -1,11 +1,12 @@
 #!/bin/bash
 
-echo $(git status -s)
+ip_addr=$(git status -s)
+echo "$ip_addr"
 
 echo Starting !
 
-if -e $(git status); then
-   VN="$VN-mod"
-   echo NOT EQUAL !
-fi
+#if -e $(git status); then
+#   VN="$VN-mod"
+#   echo NOT EQUAL !
+#fi
 
