@@ -7,7 +7,6 @@ oldip=$(cat my_ip_addr.txt)
 change=$(git status -s)
 
 if [ "$newip" != "$oldip" ] || [ "$change" != "" ]; then
-echo TEST!
 
 #-e means that i detects \n
 echo -e "$(date): Checking my public IP addr now!\n"
@@ -25,7 +24,4 @@ git commit -q -a -m "Updating my IP addr."
 git push -q
 
 echo -e "\nDone!"
-
-else
-echo "Nothing to commit!"
 fi
