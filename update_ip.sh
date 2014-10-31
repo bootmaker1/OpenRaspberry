@@ -2,12 +2,13 @@
 
 #-s means silent - no verbose
 newip=$(curl -s http://bot.whatismyipaddress.com/)
-oldip=$(cat my_ip_addr.txt)
-echo "$oldip"
-echo "$newip"
+#oldip=$(cat my_ip_addr.txt)
+oldip="1"
 
-if ! git diff-index --quiet HEAD --; then
-VN="$VN-mod"
+change=$(git status -s)
+
+if [ "$newip" != "$oldip" ] && [ "$change" != "" ]; then
+echo TEST!
 
 #-e means that i detects \n
 echo -e "$(date): Checking my public IP addr now!\n"
