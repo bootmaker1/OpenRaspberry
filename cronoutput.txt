@@ -1,6 +1,8 @@
-Fri Oct 31 07:45:02 CET 2014: Checking my public IP addr now!
+./update_ip.sh: line 6: warning: here-document at line 6 delimited by end-of-file (wanted `my_ip_addr.txt')
+./update_ip.sh: line 5: warning: here-document at line 5 delimited by end-of-file (wanted `my_ip_addr.txt')
+
+82.142.115.209
+Fri Oct 31 08:00:01 CET 2014: Checking my public IP addr now!
 
 82.142.115.209
 
-
-Done!
