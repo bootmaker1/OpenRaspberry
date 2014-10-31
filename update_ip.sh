@@ -1,7 +1,10 @@
 #!/bin/bash
 
 #-s means silent - no verbose
-curl -s http://bot.whatismyipaddress.com/ > my_ip_addr.txt
+newip=$(curl -s http://bot.whatismyipaddress.com/)
+oldip=$(<< my_ip_addr.txt)
+echo $oldip
+echo $newip
 
 if ! git diff-index --quiet HEAD --; then
 VN="$VN-mod"

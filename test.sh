@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo << 'git status -s'
+echo $(git status -s)
 
 echo Starting !
 
