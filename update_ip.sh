@@ -18,8 +18,6 @@ echo "$(date): Checking my public IP addr now!" >> output.log
 
 #print my new IP addr
 cat my_ip_addr.txt >> output.log
-#new line
-echo -e "\n" >> output.log
 
 #detect all new files
 git add -A
