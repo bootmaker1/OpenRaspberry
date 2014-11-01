@@ -2,6 +2,10 @@
 
 #-s means silent - no verbose
 newip=$(curl -s http://bot.whatismyipaddress.com/)
+if [ "$newip" == "" ]; then
+exit
+fi
+
 oldip=$(cat my_ip_addr.txt)
 
 #detect if something has changed in this git folder
